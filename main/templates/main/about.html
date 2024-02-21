@@ -1,0 +1,18 @@
+{% extends 'main/base.html'%}
+{% load tailwind_tags static %}
+
+
+
+{%block content%}
+{% block tailwind %}
+{% tailwind_css %}
+{% endblock tailwind %}
+
+
+<img src="{% static 'images/cat.jpg'%}" class=" object-cover w-full h-96" alt="cat" srcset="">
+<h1>This is the about section</h1>
+
+<div class="h-52 w-52 bg-red-700">
+    <h2 class="text-red-300">This is my DJANGO-TAILWIND</h2>
+</div>
+{%endblock content%}
